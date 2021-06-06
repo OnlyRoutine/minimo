@@ -1,0 +1,288 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.links {
+    background-color: rgb(243, 243, 243);
+}
+.textcolor1 {
+    color: rgb(0, 0, 0);
+}
+.textcolor2 {
+    color: rgb(121, 120, 120);
+    font-family: 'Playfair Display', serif;
+}
+.textcolor3 {
+    color: rgb(221, 221, 221);
+}
+.text1 {
+    font-family: 'Playfair Display', serif;
+}
+.text2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    margin: 40px auto;
+    margin-bottom: 75px;
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul {
+    display: flex;
+}
+header li {
+    margin-left: 90px
+}
+.header1 {
+    margin: 0 auto;
+    width: 1060px; 
+}
+.bigArticleConteiner {
+    margin: 0 auto;
+    width: 1060px;
+}
+.bigArticleTextConteiner {
+    margin: 30px;
+    margin-top: 95px;
+}
+.bigArticleTextConteiner img {
+    margin-top: 30px;
+}
+.bigArticleTextConteinerIndex {
+    margin: 30px;
+    margin-left: 80px;
+    margin-right: 90px;
+    margin-top: 95px;
+}
+header>a {
+    color: rgb(24, 24, 24);
+    font-size: 25px;
+}
+nav a {
+    color: rgba(8, 8, 8, 0.507);
+    font-weight: 300;
+}
+article span {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(221, 221, 221);
+}
+article h2,
+article p {
+    font-family: 'Playfair Display', serif;
+    color: rgb(121, 120, 120);
+    font-size: 13px;
+}
+.postBlock {
+    display: flex;
+    flex-direction: column;
+}
+.post {
+    display: flex;
+    gap: 50px;
+}
+.postAside {
+    margin-bottom: 55px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 340px;
+    margin-top: 95px;
+}
+aside span,
+aside p {
+    font-family: 'Playfair Display', serif;
+    color: rgb(121, 120, 120);
+    font-size: 13px;
+}
+.bannerSpot {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+    color: rgb(221, 221, 221);
+}
+.bannerSpot span {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(221, 221, 221);
+}
+.bigArticle span {
+    color: rgb(221, 221, 221);
+    font-family: 'Ubuntu', sans-serif;
+}
+.bigArticle h2,
+.bigArticle p {
+    color: rgb(121, 120, 120);
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.bigArticleFull {
+
+}
+.blockItem1Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block_item1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    width: 960px;
+}
+.block_item1 article {
+    flex-grow: 1;
+    margin-left: 30px;
+    margin-right: 30pxh;
+}
+main > div > button {
+    margin: 130px auto;
+    margin-bottom: 500px;
+    padding: 12px 22px;
+    background-color: white;
+    border: 1px rgb(160, 160, 160) solid;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+main > div > button:hover {
+    background-color: rgb(241, 241, 241);
+}
+main > div > button:active {
+    background-color: white
+}
+.shareBlock1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    margin-left: -50px;
+    width: 100px;
+}
+.shareBlock2 ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    margin-left: 465px;
+    width: 250px;
+    color: rgb(221, 221, 221);
+    font-family: 'Ubuntu', sans-serif;
+}
+.shareBlock3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 250px;
+    margin-bottom: 500px;
+    margin-left: 1120px;
+    width: 250px;
+}
+.formContainer {
+    background-color: rgb(243, 243, 243);
+    padding-top: 70px;
+    padding-bottom: 75px;
+    margin-top: 60px;
+}
+.formContainer h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 65px;
+    font-size: 30px;
+}
+.formContainer span {
+    margin-left: 190px;
+    top: -10px;
+    color: rgb(189, 188, 188);
+    font-size: 16px;
+}
+section form {
+    margin: 0 auto;
+    width: 400px;
+    border-bottom: 1px grey solid;
+    display: flex;
+}
+section form input {
+    color: rgb(121, 120, 120);
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    outline: none;
+    flex-grow: 1;
+}
+section form button {
+    border: 0px rgb(221, 221, 221) solid;
+    background-color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+.formInlineBlock {
+    display: flex;
+    justify-content: space-evenly;
+}
+textarea {
+    width: 958px;
+    padding: 20px;
+    border: 1px rgb(221, 221, 221) solid;
+    border-radius: 10px;
+    outline: none;
+}
+.noneButton {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(221, 221, 221);
+    border: none;
+    transition: all 0.3s linear;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.noneButton:hover {
+    color: rgb(170, 170, 170);
+    transition: all 0.3s linear;
+}
+
+.commentsBlock {
+    display: flex;
+}
+.commentsProfile {
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 190px;
+    height: 300px;
+}
+.commentsText {
+    margin-top: 120px;
+    margin-left: 35px;
+    height: 300px;
+}
+footer {
+    background-color: rgb(243, 243, 243);
+    padding-top: 40px;
+    padding-bottom: 25px;
+    margin-top: 120px;
+    display: flex;
+}
+footer a,
+footer span {
+    font-family: 'Playfair Display', serif;
+    color: rgb(24, 24, 24);
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1330px;
+    margin-right: 70px;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
