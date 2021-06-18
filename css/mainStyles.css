@@ -2,6 +2,15 @@ body {
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+p {
+    line-height: 24px;
+}
 .links {
     background-color: rgb(243, 243, 243);
 }
@@ -21,7 +30,11 @@ body {
 .text2 {
     font-family: 'Ubuntu', sans-serif;
 }
-
+.text3 {
+    font-style: italic;
+    margin: 30px 30px;
+    margin-right: 50px;
+}
 header {
     margin: 40px auto;
     margin-bottom: 75px;
@@ -33,11 +46,26 @@ header nav ul {
     display: flex;
 }
 header li {
-    margin-left: 90px
+    margin-left: 90px;
+}
+header a {
+    transition: all 0.3s linear;
+}
+header a:hover {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
 }
 .header1 {
     margin: 0 auto;
     width: 1060px; 
+}
+header>a {
+    color: rgb(24, 24, 24);
+    font-size: 25px;
+}
+nav a {
+    color: rgba(8, 8, 8, 0.507);
+    font-weight: 300;
 }
 .bigArticleConteiner {
     margin: 0 auto;
@@ -56,19 +84,22 @@ header li {
     margin-right: 90px;
     margin-top: 95px;
 }
-header>a {
-    color: rgb(24, 24, 24);
-    font-size: 25px;
-}
-nav a {
-    color: rgba(8, 8, 8, 0.507);
-    font-weight: 300;
-}
 article span {
     font-family: 'Ubuntu', sans-serif;
     color: rgb(221, 221, 221);
+    padding-top: 30px;
 }
-article h2,
+article h2 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(121, 120, 120);
+    font-size: 30px;
+}
+article h3 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(121, 120, 120);
+    font-size: 30px;
+    font-weight: 50;
+}
 article p {
     font-family: 'Playfair Display', serif;
     color: rgb(121, 120, 120);
@@ -96,33 +127,40 @@ aside span,
 aside p {
     font-family: 'Playfair Display', serif;
     color: rgb(121, 120, 120);
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 20px;
 }
 .bannerSpot {
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/article14.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 34px;
-    color: rgb(221, 221, 221);
+    font-size: 48px;
+    color: rgb(255, 255, 255);
 }
 .bannerSpot span {
-    display: flex;
-    flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
 }
 .bigArticle span {
     color: rgb(221, 221, 221);
     font-family: 'Ubuntu', sans-serif;
 }
-.bigArticle h2,
+.bigArticle h2 {
+    color: rgb(121, 120, 120);
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
 .bigArticle p {
     color: rgb(121, 120, 120);
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-}
-.bigArticleFull {
-
 }
 .blockItem1Container {
     display: flex;
@@ -140,9 +178,12 @@ aside p {
     margin-left: 30px;
     margin-right: 30pxh;
 }
+.block_item1 div {
+    margin-top: 20px;
+}
 main > div > button {
     margin: 130px auto;
-    margin-bottom: 500px;
+    margin-bottom: 150px;
     padding: 12px 22px;
     background-color: white;
     border: 1px rgb(160, 160, 160) solid;
@@ -171,7 +212,7 @@ main > div > button:active {
     justify-content: space-evenly;
     margin-top: 70px;
     margin-bottom: 100px;
-    margin-left: 465px;
+    margin-left: 420px;
     width: 250px;
     color: rgb(221, 221, 221);
     font-family: 'Ubuntu', sans-serif;
@@ -179,14 +220,14 @@ main > div > button:active {
 .shareBlock3 {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 250px;
-    margin-bottom: 500px;
+    margin-top: 230px;
+    margin-bottom: 150px;
     margin-left: 1120px;
     width: 250px;
 }
 .formContainer {
     background-color: rgb(243, 243, 243);
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 75px;
     margin-top: 60px;
 }
@@ -198,7 +239,6 @@ main > div > button:active {
 }
 .formContainer span {
     margin-left: 190px;
-    top: -10px;
     color: rgb(189, 188, 188);
     font-size: 16px;
 }
@@ -225,13 +265,23 @@ section form button {
 .formInlineBlock {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 25px;
 }
 textarea {
-    width: 958px;
+    width: 1050px;
+    margin-left: 0px;
     padding: 20px;
     border: 1px rgb(221, 221, 221) solid;
     border-radius: 10px;
     outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    transition: all 0.3s linear;
+}
+textarea:hover {
+    box-shadow: 0 0 10px 1px rgb(192, 191, 191);
 }
 .noneButton {
     cursor: pointer;
@@ -239,34 +289,67 @@ textarea {
     color: rgb(221, 221, 221);
     border: none;
     transition: all 0.3s linear;
-    margin-top: 40px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .noneButton:hover {
     color: rgb(170, 170, 170);
     transition: all 0.3s linear;
 }
-
 .commentsBlock {
     display: flex;
-}
-.commentsProfile {
-    flex-direction: column;
-    margin-top: 120px;
-    margin-left: 190px;
-    height: 300px;
+    line-height: 0px;
+    margin-left: 150px;
+    margin-top: 30px;
 }
 .commentsText {
     margin-top: 120px;
     margin-left: 35px;
+    margin-right: 185px;
     height: 300px;
+}
+.commentsText span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+}
+.comments2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(170, 170, 170);
+    margin: -50px 0 45px 170px;
+}
+.commentsProfile {
+    margin: 0 20px;
+}
+.commentsProfile1 {
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/profile2.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.commentsProfile2 {
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/profile.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
 }
 footer {
     background-color: rgb(243, 243, 243);
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 25px;
-    margin-top: 120px;
+    margin-top: 30px;
     display: flex;
+    justify-content: center;
 }
 footer a,
 footer span {
@@ -275,14 +358,17 @@ footer span {
 }
 footer ul {
     display: flex;
-    justify-content: space-between;
-    margin-left: 1330px;
-    margin-right: 70px;
     align-items: center;
+    gap: 20px;
 }
-a {
-    text-decoration: none;
+footer .wrapper {
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+
 }
-ul {
-    list-style-type: none;
+.footerLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
