@@ -1,5 +1,11 @@
-const loadMoreButton = document.getElementById("loadMoreButton");
+const loadMoreBtn = document.getElementById("loadMoreButton");
 
-if (loadMoreButton) {
-    loadMoreButton.addEventListener("click", () => console.log("Clicked"));
+const articles = document.getElementById("articlesList");
+console.log(articles)
+for (let i = 0; i < 2; i++) {
+  console.log(articles.children[i].tagName);
+}
+
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener("click", () => console.log("Clicked"));
 }
