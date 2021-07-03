@@ -17,20 +17,10 @@
     </script>
 
     <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('newsletterForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                // this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_sr3fwsw', 'template_10bpogr', e.target, 'user_xRo8h9bamVpcyviNP0wj3')
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+      function formSubmit(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_sr3fwsw', 'template_10bpogr', this);
+      }
     </script>
   </head>
   <body>
@@ -158,7 +148,7 @@
       </section>
       <section class="formContainer">
         <h3 class="textcolor2">Sign up for our newsletter!</h3>
-        <form id="newsletterForm" >
+        <form id="newsletterForm" enctype="multipart/form-data" method="post" onsubmit="formSubmit()" >
           <input type="email" placeholder="Enter a valid email address" id="emailToSignUpField" required/>
           <button type="submit" id="emailToSignUpButton">
             <img src="img/sendIcon.png" alt="" />
