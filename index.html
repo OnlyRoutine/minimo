@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="css/mainStyles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet"/>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_xRo8h9bamVpcyviNP0wj3");
+      })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_sr3fwsw', 'template_10bpogr', e.target, 'user_xRo8h9bamVpcyviNP0wj3')
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
   </head>
   <body>
     <header>
@@ -134,9 +158,9 @@
       </section>
       <section class="formContainer">
         <h3 class="textcolor2">Sign up for our newsletter!</h3>
-        <form action="mailto:Scientific1atheism@gmail.com" method="post" enctype="text/plain" >
-          <input type="email" placeholder="Enter a valid email address" required/>
-          <button type="submit">
+        <form id="newsletterForm" >
+          <input type="email" placeholder="Enter a valid email address" id="emailToSignUpField" required/>
+          <button type="submit" id="emailToSignUpButton">
             <img src="img/sendIcon.png" alt="" />
           </button>
         </form>
