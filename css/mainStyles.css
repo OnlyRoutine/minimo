@@ -279,9 +279,8 @@ textarea {
     outline: none;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    display: flex;
-    justify-content: start;
     transition: all 0.3s linear;
+    resize: none;
 }
 textarea:hover {
     box-shadow: 0 0 10px 1px rgb(192, 191, 191);
